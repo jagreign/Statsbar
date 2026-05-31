@@ -8,12 +8,12 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: Arial, sans-serif;
-    background: transparent;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
   .stats-wrapper {
     display: flex;
@@ -22,7 +22,7 @@
     gap: 0;
     width: 100%;
     max-width: 820px;
-    border: 1px solid rgba(255,255,255,0.2);
+    background: #1a1a1a;
     border-radius: 16px;
     overflow: hidden;
   }
@@ -44,7 +44,7 @@
     top: 20%;
     height: 60%;
     width: 1px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.12);
   }
   .stat:hover {
     background: rgba(255,255,255,0.05);
@@ -58,17 +58,17 @@
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
   }
+  .stat-number span {
+    color: #c85a1e;
+  }
   .stat-label {
     font-family: Arial, sans-serif;
     font-weight: 400;
     font-size: 0.72rem;
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.45);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     line-height: 1.4;
-  }
-  .stat-number span {
-    color: #c85a1e;
   }
   @media (max-width: 560px) {
     .stats-wrapper {
